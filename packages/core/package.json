@@ -4,7 +4,7 @@
   "description": "> TODO: description",
   "author": "lqd1434 <1434288209@qq.com>",
   "homepage": "https://github.com/lqd1434/uni-webview#readme",
-  "license": "ISC",
+  "license": "MIT",
   "main": "lib/core.js",
   "directories": {
     "lib": "lib",
@@ -25,5 +25,6 @@
   },
   "bugs": {
     "url": "https://github.com/lqd1434/uni-webview/issues"
-  }
+  },
+  "gitHead": "1821aa18359f3127fbb92075efa8948c3399e56a"
 }
