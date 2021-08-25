@@ -1,0 +1,13 @@
+0 silly argv { _: [ 'create' ], lernaVersion: '4.0.0', '$0': 'lerna', name: 'one' }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/liqingdong/WebstormProjects/uni-webview
+3 error Error: canceled
+3 error     at Interface.<anonymous> (/Users/liqingdong/WebstormProjects/uni-webview/node_modules/read/lib/read.js:66:13)
+3 error     at Interface.emit (events.js:375:28)
+3 error     at Interface._ttyWrite (readline.js:910:16)
+3 error     at ReadStream.onkeypress (readline.js:235:10)
+3 error     at ReadStream.emit (events.js:375:28)
+3 error     at emitKeys (internal/readline/utils.js:358:14)
+3 error     at emitKeys.next (<anonymous>)
+3 error     at ReadStream.onData (readline.js:1179:36)
+3 error     at ReadStream.emit (events.js:375:28)
