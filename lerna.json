@@ -4,5 +4,9 @@
   ],
   "version": "0.0.3",
   "useWorkspaces": true,
-  "npmClient": "yarn"
+  "npmClient": "yarn",
+  "publish": {
+    "message": ":bookmark: release: publish %s",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
