@@ -1,3 +1,3 @@
 export function core() {
-  console.log(1112222)
+  console.log(1122)
 }
