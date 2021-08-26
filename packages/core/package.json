@@ -1,30 +1,21 @@
 {
-  "name": "core",
+  "name": "u-webview-core",
   "version": "0.1.1",
   "description": "> TODO: description",
   "author": "lqd1434 <1434288209@qq.com>",
   "homepage": "https://github.com/lqd1434/uni-webview#readme",
   "license": "MIT",
-  "main": "lib/core.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
+  "main": "dist/u-webview-core.cjs.js",
+  "module": "dist/u-webview-core.esm.js",
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
-    "registry": "https://registry.npm.taobao.org"
+    "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lqd1434/uni-webview.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "bugs": {
-    "url": "https://github.com/lqd1434/uni-webview/issues"
   },
   "gitHead": "5cccb76c09129f8f748f42f02560ae8f31626293"
 }

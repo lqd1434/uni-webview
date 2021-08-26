@@ -23,7 +23,7 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "utalk-webView-*": ["./packages/*/src"]
+      "u-webView-*": ["./packages/*/src"]
     },
     "isolatedModules": true
   },
