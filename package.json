@@ -1,9 +1,11 @@
 {
   "name": "u-webview",
-  "private": false,
+  "private": true,
   "scripts": {
     "start": "preconstruct watch",
     "build": "preconstruct build",
+    "install": "lerna bootstrap",
+    "publish": "lerna publish",
     "prettier": "pretty-quick"
   },
   "devDependencies": {
