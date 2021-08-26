@@ -1,6 +1,6 @@
 {
   "name": "u-webview",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "preconstruct watch",
     "build": "preconstruct build",
