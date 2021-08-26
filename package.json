@@ -1,12 +1,10 @@
 {
   "name": "u-webview",
-  "private": false,
+  "private": true,
   "scripts": {
     "start": "preconstruct watch",
     "build": "preconstruct build",
-    "prettier": "pretty-quick",
-    "lint": "eslint -f unix \"package/**/*.{ts,tsx}\"",
-    "docs": "typedoc --out docs/ packages/ && touch docs/.nojekyll"
+    "prettier": "pretty-quick"
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
