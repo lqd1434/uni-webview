@@ -2,8 +2,11 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-function core() {
+var uWebviewCore = require('u-webview-core');
+
+function ui() {
+  uWebviewCore.core();
   console.log(1122);
 }
 
-exports.core = core;
+exports.ui = ui;
