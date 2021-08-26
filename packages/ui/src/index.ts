@@ -2,5 +2,5 @@ import { core } from 'u-webview-core'
 
 export function ui() {
   core()
-  console.log(1122)
+  console.log(112112)
 }
