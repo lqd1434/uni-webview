@@ -1,5 +1,5 @@
-import { U_window } from 'u-webview-core/src/gloable'
-import { ResType } from 'u-webView-type'
+import { U_window } from 'u-webview-core'
+import { ResType } from 'u-webview-type'
 
 
 export function postMessage(message:ResType) {
