@@ -15,7 +15,7 @@ export interface SetResType{
 export function setToWindow(method:MethodType) {
   try {
     U_window[method.name] = method
-    return {status:0,desc:'success'} as SetResType
+    return {status:0,desc:'success1'} as SetResType
   } catch (e){
     return {status:1,desc:e.toString()} as SetResType
   }
