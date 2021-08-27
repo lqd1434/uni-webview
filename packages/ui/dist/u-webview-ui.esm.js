@@ -2,7 +2,7 @@ import { core } from 'u-webview-core';
 
 function ui() {
   core();
-  console.log(1122);
+  console.log(112112);
 }
 
 export { ui };

@@ -1,3 +1,10 @@
+import { U_window } from './gloable'
+import { ResType } from 'u-webview-type'
+
+
+
 export function core() {
-  console.log(1122)
+  const data:ResType = {status:0,body:'hello I am core',desc:'发送消息'}
+  U_window.JsBridge.postMessage(JSON.stringify(data))
+  alert(JSON.stringify(U_window.JsBridge))
 }

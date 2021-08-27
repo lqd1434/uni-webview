@@ -1,15 +1,12 @@
 {
-  "name": "u-webview-ui",
+  "name": "u-webview-model",
   "version": "0.2.3",
   "description": "ui",
   "author": "lqd1434 <1434288209@qq.com>",
   "homepage": "https://github.com/lqd1434/uni-webview#readme",
   "license": "MIT",
-  "main": "dist/u-webview-ui.cjs.js",
-  "module": "dist/u-webview-ui.esm.js",
-  "dependencies": {
-    "u-webview-core": "0.2.3"
-  },
+  "main": "dist/u-webview-model.cjs.js",
+  "module": "dist/u-webview-model.esm.js",
   "files": [
     "dist"
   ],
