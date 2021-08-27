@@ -1,6 +1,6 @@
-
 export * from 'u-webview-event'
 export * from 'u-webview-type'
+export * from './getUserInfo'
 import { U_window } from './gloable'
 import { ResType } from 'u-webview-type'
 
