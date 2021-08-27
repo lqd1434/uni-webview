@@ -3,5 +3,5 @@ export * from './gloable'
 
 
 export function core() {
-  console.log('core1')
+  console.log('core')
 }
