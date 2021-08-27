@@ -1,6 +1,3 @@
 export * from './gloable'
+export * from './init'
 
-
-export function core() {
-  console.log('core')
-}

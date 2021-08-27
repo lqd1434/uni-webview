@@ -1,10 +1,8 @@
-import { U_window } from 'u-webview-core'
 import { ResType } from 'u-webview-type'
 
-
-export function postMessage(message:ResType) {
+export function postMessage(window:any,message:ResType) {
   try {
-    U_window.JsBridge.postMessage(JSON.stringify(message))
+    window.JsBridge.postMessage(JSON.stringify(message))
   } catch (e) {
     alert(e)
   }
