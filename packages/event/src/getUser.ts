@@ -1,7 +1,7 @@
-import { setToWindow } from 'u-webView-event/dist/declarations'
-import { getUserInfo } from 'u-webView-core'
+import { setToWindow } from './index'
 
-export function setWindow() {
+
+export function setWindow(getUserInfo:()=>any) {
   setToWindow({method:getUserInfo,name:'getUserInfo'})
   window.addEventListener('DOMContentLoaded', () => {
     console.log('DOMContentLoaded')

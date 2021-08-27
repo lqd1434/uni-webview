@@ -1,4 +1,6 @@
-import {U_window} from 'u-webview-core/src/gloable'
+import {U_window} from 'u-webview-core'
+export * from './postMessage'
+export * from './getUser'
 
 export  interface MethodType {
   method: (params: any) => any
