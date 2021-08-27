@@ -1,6 +1,6 @@
 {
   "name": "u-webview-core",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "core",
   "author": "lqd1434 <1434288209@qq.com>",
   "homepage": "https://github.com/lqd1434/uni-webview#readme",
@@ -8,7 +8,7 @@
   "main": "dist/u-webview-core.cjs.js",
   "module": "dist/u-webview-core.esm.js",
   "dependencies": {
-    "u-webview-event": "^0.2.5",
+    "u-webview-event": "^0.2.6",
     "u-webview-type": "^0.2.5"
   },
   "files": [
