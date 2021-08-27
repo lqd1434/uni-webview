@@ -1,4 +1,4 @@
-import { setToWindow } from 'u-webView-event'
+import { setToWindow } from 'u-webview-event'
 
 export function getUserInfo(userInfo:any) {
   console.log(userInfo)
