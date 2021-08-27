@@ -7,9 +7,6 @@
   "license": "MIT",
   "main": "dist/u-webview-core.cjs.js",
   "module": "dist/u-webview-core.esm.js",
-  "dependencies": {
-    "u-webview-event": "^0.2.7"
-  },
   "files": [
     "dist"
   ],
