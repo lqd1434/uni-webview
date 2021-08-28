@@ -1,17 +1,17 @@
-import { U_window } from './gloable'
-import { postMessage } from 'u-webview-event'
-
+import { WebViewCore } from './core'
+import {postMessage} from './postMessage'
 class UWebView{
-  name: string = 'o'
-  init(){
-    postMessage(U_window,{status:0,body:'hello',type:'state',desc:'hello'})
-    console.log(U_window)
-    console.log(U_window.document)
-    U_window.document.addEventListener('say',(e:any)=>{
-      console.log(e)
-      this.name = 'hellllll'
+  init(callback:(data)=>any){
+    const webviewCore=WebViewCore.instance()
+    webviewCore.addOnceListener('ping',()=>{
+      callback(true)
     })
+    const isSend = postMessage({ desc: '建立连接', name: 'ping', type: 'state' })
+    if (!isSend){
+      callback(false)
+    }
   }
 }
 
 export const uWebView = new UWebView()
+

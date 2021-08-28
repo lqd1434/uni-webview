@@ -1,12 +1,18 @@
 {
-  "name": "u-webview-type",
-  "version": "0.2.5",
+  "name": "u-webview-hook",
+  "version": "0.2.7",
   "description": "ui",
   "author": "lqd1434 <1434288209@qq.com>",
   "homepage": "https://github.com/lqd1434/uni-webview#readme",
   "license": "MIT",
-  "main": "dist/u-webview-type.cjs.js",
-  "module": "dist/u-webview-type.esm.js",
+  "main": "dist/u-webview-hook.cjs.js",
+  "module": "dist/u-webview-hook.esm.js",
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
+  "dependencies": {
+    "u-webview-core": "0.2.21"
+  },
   "files": [
     "dist"
   ],
@@ -17,8 +23,5 @@
     "type": "git",
     "url": "git+https://github.com/lqd1434/uni-webview.git"
   },
-  "gitHead": "5cccb76c09129f8f748f42f02560ae8f31626293",
-  "dependencies": {
-    "@types/react": "^17.0.19"
-  }
+  "gitHead": "5cccb76c09129f8f748f42f02560ae8f31626293"
 }

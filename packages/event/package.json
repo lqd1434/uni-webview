@@ -8,7 +8,7 @@
   "main": "dist/u-webview-event.cjs.js",
   "module": "dist/u-webview-event.esm.js",
   "dependencies": {
-    "u-webview-type": "^0.2.5"
+    "u-webview-core": "^0.2.21"
   },
   "files": [
     "dist"

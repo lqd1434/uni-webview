@@ -7,6 +7,9 @@
   "license": "MIT",
   "main": "dist/u-webview-ui.cjs.js",
   "module": "dist/u-webview-ui.esm.js",
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
   "files": [
     "dist"
   ],
@@ -17,5 +20,8 @@
     "type": "git",
     "url": "git+https://github.com/lqd1434/uni-webview.git"
   },
-  "gitHead": "5cccb76c09129f8f748f42f02560ae8f31626293"
+  "gitHead": "5cccb76c09129f8f748f42f02560ae8f31626293",
+  "dependencies": {
+    "@types/react": "^17.0.19"
+  }
 }

@@ -1,7 +1,3 @@
-export * from './postMessage'
+export * from './login'
 
-
-export function say(window:any) {
-  window.document.dispatchEvent(new CustomEvent('say',{detail:'hello'}))
-}
 

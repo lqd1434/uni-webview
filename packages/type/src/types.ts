@@ -1,6 +1,22 @@
 export interface ResType {
-  status: 0|1|2;
+  status: 'success'|'failure';
   body:any;
-  type:'state'|'method'
   desc:string
+}
+
+export interface PostType {
+  type:'state'|'event'
+  data?:any
+  name:string
+  desc:string
+}
+
+export interface EventType {
+  fn:(data)=>any;
+  eventName:string
+}
+
+export interface DispatchType{
+  eventName:string
+  data:any
 }
