@@ -22,8 +22,6 @@ export class WebViewCore{
   //flutter端调用
   dispatchMyEvent(eventString:string) {
     try {
-      console.log('------dispatchMyEvent')
-      console.log(eventString)
       const { eventName,data } = JSON.parse(eventString) as DispatchType
       this.window.document.dispatchEvent(new CustomEvent(eventName,{detail:data}))
     } catch (e) {

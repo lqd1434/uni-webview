@@ -1,6 +1,6 @@
 export interface ResType {
   status: 'success'|'failure';
-  body:any;
+  data:any;
   desc:string
 }
 
@@ -12,7 +12,7 @@ export interface PostType {
 }
 
 export interface EventType {
-  fn:(data)=>any;
+  fn:(data:CustomEvent)=>any;
   eventName:string
 }
 
