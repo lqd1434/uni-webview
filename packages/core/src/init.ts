@@ -14,7 +14,7 @@ class UWebView{
         callback(false)
       }
     })
-    const isSend = postMessage({ desc: '建立连接', name: 'ping', type: 'event' })
+    const isSend = postMessage({ desc: '建立连接啊', name: 'ping', type: 'event' })
     if (!isSend){
       callback(false)
     }
