@@ -3,6 +3,7 @@ export interface EventsName{
   fullScreen
   requestLogin
   loadingToast
+  cancelLoading
   successToast
   errorToast
   waringToast

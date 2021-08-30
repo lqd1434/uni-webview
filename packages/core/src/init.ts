@@ -3,6 +3,7 @@ import {postMessage} from './postMessage'
 import { Callback } from 'u-webView-type'
 class UWebView{
   init(callback:Callback<boolean>){
+    console.log('-----init----')
     const webviewCore=WebViewCore.instance()
     const timer = setTimeout(()=>{
       callback(false)
