@@ -1,3 +1,8 @@
+import { EventsName } from './eventsName'
+import { StatesName } from './statesName'
+
+export type Callback<T> = (data: T) => any
+
 export interface ResType {
   status: 'success'|'failure';
   data:any;
@@ -7,7 +12,7 @@ export interface ResType {
 export interface PostType {
   type:'state'|'event'
   data?:any
-  name:string
+  name:keyof EventsName|keyof StatesName
   desc:string
 }
 

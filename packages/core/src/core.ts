@@ -1,5 +1,6 @@
 import { U_window } from './gloable'
-import { DispatchType,EventType } from 'u-webView-type'
+import { DispatchType,EventType } from 'u-webview-type'
+import { ListenerName } from 'u-webview-type'
 
 
 export class WebViewCore{
@@ -33,7 +34,7 @@ export class WebViewCore{
     this.window.document.addEventListener(eventName,fn)
   }
 
-  addOnceListener(eventName:string,fn:(data:CustomEvent)=>any){
+  addOnceListener(eventName:keyof ListenerName,fn:(data:CustomEvent)=>any){
     this.window.document.addEventListener(eventName,fn,{once:true})
   }
 

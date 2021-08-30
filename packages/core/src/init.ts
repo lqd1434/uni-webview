@@ -1,7 +1,8 @@
 import { WebViewCore } from './core'
 import {postMessage} from './postMessage'
+import { Callback } from 'u-webView-type'
 class UWebView{
-  init(callback:(data)=>any){
+  init(callback:Callback<boolean>){
     const webviewCore=WebViewCore.instance()
     const timer = setTimeout(()=>{
       callback(false)
@@ -17,6 +18,20 @@ class UWebView{
     const isSend = postMessage({ desc: '建立连接啊', name: 'ping', type: 'event' })
     if (!isSend){
       callback(false)
+    }
+  }
+
+  getUserInfo(callback:Callback<any>){
+    WebViewCore.instance().addOnceListener('userInfo',({ detail }:CustomEvent)=>{
+      if(detail){
+        callback(detail)
+      } else{
+        callback(null)
+      }
+    })
+    const isSend = postMessage({ desc: '获取app登录用户信息', name: 'userInfo', type: 'state' })
+    if (!isSend){
+      callback(null)
     }
   }
 }
