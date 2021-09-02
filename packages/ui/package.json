@@ -1,6 +1,6 @@
 {
   "name": "u-webview-ui",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "ui",
   "author": "lqd1434 <1434288209@qq.com>",
   "homepage": "https://github.com/lqd1434/uni-webview#readme",
@@ -8,7 +8,7 @@
   "main": "dist/u-webview-ui.cjs.js",
   "module": "dist/u-webview-ui.esm.js",
   "dependencies": {
-    "u-webview-core": "^0.3.1"
+    "u-webview-core": "^0.3.2"
   },
   "files": [
     "dist"
