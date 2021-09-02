@@ -6,7 +6,7 @@ import { Emitter, nameType } from 'u-webview-event'
 class WebViewCore{
   constructor() {
     this.window['dispatchMyEvent'] = this.dispatchMyEvent
-    this.window['Emitter'] = Emitter
+    // this.window['Emitter'] = Emitter
   }
 
   get window(){
@@ -17,16 +17,16 @@ class WebViewCore{
     return U_window.JsBridge
   }
 
-  get Emitter(){
-    const { emit, off, offAll, on, once } = (window['Emitter'] as typeof Emitter)
-    return { emit, off, offAll, on, once }
-  }
+  // get Emitter(){
+  //   const { emit, off, offAll, on, once } = (window['Emitter'] as typeof Emitter)
+  //   return { emit, off, offAll, on, once }
+  // }
 
   //flutter端调用
   dispatchMyEvent(eventString:string) {
     try {
       const { eventName,data } = JSON.parse(eventString) as DispatchType
-      this.Emitter.emit(<nameType>eventName,data)
+      Emitter.emit(<nameType>eventName,data)
       // this.window.document.dispatchEvent(new CustomEvent(eventName,{detail:data}))
     } catch (e) {
       console.log(e)
