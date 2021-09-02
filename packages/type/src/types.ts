@@ -22,6 +22,6 @@ export interface EventType {
 }
 
 export interface DispatchType{
-  eventName:string
+  eventName:keyof EventsName|keyof StatesName
   data:any
 }

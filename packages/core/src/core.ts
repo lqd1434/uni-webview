@@ -1,6 +1,6 @@
-import { MyEmitter, U_window } from './gloable'
+import { U_window } from './gloable'
 import { DispatchType } from 'u-webview-type'
-import { Emitter } from 'u-webview-event'
+import { Emitter, nameType } from 'u-webview-event'
 
 
 class WebViewCore{
@@ -17,11 +17,16 @@ class WebViewCore{
     return U_window.JsBridge
   }
 
+  get Emitter(){
+    const { emit, off, offAll, on, once } = (window['Emitter'] as typeof Emitter)
+    return { emit, off, offAll, on, once }
+  }
+
   //flutter端调用
   dispatchMyEvent(eventString:string) {
     try {
       const { eventName,data } = JSON.parse(eventString) as DispatchType
-      MyEmitter.emit(eventName,data)
+      this.Emitter.emit(<nameType>eventName,data)
       // this.window.document.dispatchEvent(new CustomEvent(eventName,{detail:data}))
     } catch (e) {
       console.log(e)
@@ -42,5 +47,5 @@ class WebViewCore{
   // }
 }
 
-export const WebViewCoreInstance = new WebViewCore()
+export const UWCore = new WebViewCore()
 

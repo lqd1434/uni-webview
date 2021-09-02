@@ -1,6 +1,6 @@
 import {postMessage} from './postMessage'
 import { Callback } from 'u-webview-type'
-import { MyEmitter } from './gloable'
+import { UWCore } from './core'
 
 class UWebView{
 
@@ -9,7 +9,7 @@ class UWebView{
       callback(false)
     },20000)
 
-    MyEmitter.once('ping',(data:any)=>{
+    UWCore.Emitter.once('ping',(data:any)=>{
       clearTimeout(timer)
       if(data === 'success'){
         callback(true)
@@ -24,7 +24,7 @@ class UWebView{
   }
 
   getUserInfo(callback:Callback<any>){
-    MyEmitter.once('userInfo',(data:any)=>{
+    UWCore.Emitter.once('userInfo',(data:any)=>{
       if(data){
         callback(data)
       } else{
