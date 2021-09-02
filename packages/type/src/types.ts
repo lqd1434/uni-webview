@@ -17,7 +17,7 @@ export interface PostType {
 }
 
 export interface EventType {
-  fn:(data:CustomEvent)=>any;
+  fn:(data:any)=>any;
   eventName:string
 }
 

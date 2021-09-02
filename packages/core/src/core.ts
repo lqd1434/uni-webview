@@ -1,11 +1,12 @@
-import { U_window } from './gloable'
-import { DispatchType,EventType } from 'u-webview-type'
-import { ListenerName } from 'u-webview-type'
+import { MyEmitter, U_window } from './gloable'
+import { DispatchType } from 'u-webview-type'
+import { Emitter } from 'u-webview-event'
 
 
-export class WebViewCore{
+class WebViewCore{
   constructor() {
     this.window['dispatchMyEvent'] = this.dispatchMyEvent
+    this.window['Emitter'] = Emitter
   }
 
   get window(){
@@ -16,31 +17,30 @@ export class WebViewCore{
     return U_window.JsBridge
   }
 
-  static instance():WebViewCore{
-    return new WebViewCore()
-  }
-
   //flutter端调用
   dispatchMyEvent(eventString:string) {
     try {
       const { eventName,data } = JSON.parse(eventString) as DispatchType
-      this.window.document.dispatchEvent(new CustomEvent(eventName,{detail:data}))
+      MyEmitter.emit(eventName,data)
+      // this.window.document.dispatchEvent(new CustomEvent(eventName,{detail:data}))
     } catch (e) {
       console.log(e)
     }
   }
-
-  addListener({eventName,fn}:EventType){
-    this.window.document.addEventListener(eventName,fn)
-  }
-
-  addOnceListener(eventName:keyof ListenerName,fn:(data:CustomEvent)=>any){
-    this.window.document.addEventListener(eventName,fn,{once:true})
-  }
-
-  removeListener({eventName,fn}:EventType){
-    this.window.document.removeEventListener(eventName,fn)
-  }
-
+  // addListener(eventName:keyof ListenerName,fn:(data:any)=>any){
+  //   // this.window.document.addEventListener(eventName,fn)
+  //   MyEmitter.on(eventName,fn)
+  // }
+  //
+  // addOnceListener(eventName:keyof ListenerName,fn:(data:any)=>any){
+  //   // this.window.document.addEventListener(eventName,fn,{once:true})
+  //   MyEmitter.once(eventName,fn)
+  // }
+  //
+  // removeListener(eventName:keyof ListenerName,fn:(data:any)=>any){
+  //   this.window.document.removeEventListener(eventName,fn)
+  // }
 }
+
+export const WebViewCoreInstance = new WebViewCore()
 

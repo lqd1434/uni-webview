@@ -8,8 +8,11 @@
   "main": "dist/u-webview-core.cjs.js",
   "module": "dist/u-webview-core.esm.js",
   "dependencies": {
-    "@types/react": "^17.0.19",
-    "u-webview-type": "^0.2.28"
+    "u-webview-type": "^0.2.28",
+    "u-webview-event": "^0.2.28"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.19"
   },
   "files": [
     "dist"

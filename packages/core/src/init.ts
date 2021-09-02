@@ -1,16 +1,17 @@
-import { WebViewCore } from './core'
 import {postMessage} from './postMessage'
-import { Callback } from 'u-webView-type'
+import { Callback } from 'u-webview-type'
+import { MyEmitter } from './gloable'
+
 class UWebView{
+
   init(callback:Callback<boolean>){
-    console.log('-----init----')
-    const webviewCore=WebViewCore.instance()
     const timer = setTimeout(()=>{
       callback(false)
     },20000)
-    webviewCore.addOnceListener('ping',({ detail }:CustomEvent)=>{
+
+    MyEmitter.once('ping',(data:any)=>{
       clearTimeout(timer)
-      if(detail === 'success'){
+      if(data === 'success'){
         callback(true)
       } else{
         callback(false)
@@ -23,9 +24,9 @@ class UWebView{
   }
 
   getUserInfo(callback:Callback<any>){
-    WebViewCore.instance().addOnceListener('userInfo',({ detail }:CustomEvent)=>{
-      if(detail){
-        callback(detail)
+    MyEmitter.once('userInfo',(data:any)=>{
+      if(data){
+        callback(data)
       } else{
         callback(null)
       }
