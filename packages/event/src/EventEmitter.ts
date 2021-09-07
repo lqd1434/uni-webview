@@ -64,7 +64,6 @@ class MyEventEmitter{
     })
   }
 
-
   /**
    *移除某个监听函数
    * @param name 监听命名空间

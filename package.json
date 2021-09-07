@@ -5,7 +5,7 @@
     "start": "preconstruct watch",
     "build": "preconstruct build",
     "install": "lerna bootstrap",
-    "pre publishCheack": "preconstruct build && lerna bootstrap",
+    "check": "preconstruct build && lerna bootstrap",
     "publish": "lerna publish",
     "prettier": "pretty-quick"
   },
