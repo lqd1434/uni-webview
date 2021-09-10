@@ -1,6 +1,6 @@
 {
   "name": "u-webview-hook",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "hook",
   "author": "lqd1434 <1434288209@qq.com>",
   "homepage": "https://github.com/lqd1434/uni-webview#readme",
@@ -8,16 +8,16 @@
   "main": "dist/u-webview-hook.cjs.js",
   "module": "dist/u-webview-hook.esm.js",
   "peerDependencies": {
-    "react": "^17.0.2",
-    "history": "^5.0.1"
+    "history": "^5.0.1",
+    "react": "^17.0.2"
   },
   "devDependencies": {
-    "@types/react": "17.0.20",
-    "@types/history": "^4.7.9"
+    "@types/history": "^4.7.9",
+    "@types/react": "17.0.20"
   },
   "dependencies": {
-    "u-webview-core": "^0.3.3",
-    "react-ga": "3.3.0"
+    "react-ga": "3.3.0",
+    "u-webview-core": "^0.4.0"
   },
   "files": [
     "dist"
