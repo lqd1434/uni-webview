@@ -11,9 +11,6 @@
     "u-webview-event": "^0.3.3",
     "u-webview-type": "^0.3.3"
   },
-  "devDependencies": {
-    "@types/react": "^17.0.19"
-  },
   "files": [
     "dist"
   ],
@@ -23,6 +20,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lqd1434/uni-webview.git"
-  },
-  "gitHead": "5cccb76c09129f8f748f42f02560ae8f31626293"
+  }
 }

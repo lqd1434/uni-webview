@@ -9,7 +9,7 @@ export const useApp = ():boolean=>{
   const [isConnect,setConnect] = useState(false)
 
   useLayoutEffect(() => {
-    uWebView.init((data => setConnect(data)))
+    uWebView.connect((data => setConnect(data)))
   },[])
 
   return isConnect

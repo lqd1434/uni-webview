@@ -3,8 +3,7 @@ import { Callback } from 'u-webview-type'
 import { Emitter } from 'u-webview-event'
 
 class UWebView{
-
-  init(callback:Callback<boolean>){
+  connect(callback:Callback<boolean>){
     const timer = setTimeout(()=>{
       callback(false)
     },20000)
