@@ -1,5 +1,5 @@
+import createBrowserHistory from 'history/createBrowserHistory'
 import ReactGA from 'react-ga'
-import { createBrowserHistory } from 'history'
 
 /**
  * 需配合react-router使用
