@@ -1,0 +1,26 @@
+{
+  "name": "u-webview-http",
+  "version": "0.4.0",
+  "description": "http",
+  "author": "lqd1434 <1434288209@qq.com>",
+  "homepage": "https://github.com/lqd1434/uni-webview#readme",
+  "license": "MIT",
+  "main": "dist/u-webview-http.cjs.js",
+  "module": "dist/u-webview-http.esm.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "u-webview-ui": "^0.4.0",
+    "u-webview-core": "^0.4.0",
+    "axios": "^0.21.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lqd1434/uni-webview.git"
+  },
+  "gitHead": "5cccb76c09129f8f748f42f02560ae8f31626293"
+}

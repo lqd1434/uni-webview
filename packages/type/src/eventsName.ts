@@ -7,4 +7,6 @@ export interface EventsName{
   successToast
   errorToast
   waringToast
+  response
+  request
 }
