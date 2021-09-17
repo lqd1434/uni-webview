@@ -15,7 +15,7 @@
     "@types/react": "17.0.20"
   },
   "dependencies": {
-    "history": "^5.0.1",
+    "history": "4.10.1",
     "react-ga": "3.3.0",
     "u-webview-core": "^0.4.2"
   },
