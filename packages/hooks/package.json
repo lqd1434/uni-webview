@@ -1,6 +1,6 @@
 {
   "name": "u-webview-hook",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "hook",
   "author": "lqd1434 <1434288209@qq.com>",
   "homepage": "https://github.com/lqd1434/uni-webview#readme",
@@ -17,7 +17,7 @@
   "dependencies": {
     "history": "^5.0.1",
     "react-ga": "3.3.0",
-    "u-webview-core": "^0.4.0"
+    "u-webview-core": "^0.4.2"
   },
   "files": [
     "dist"
