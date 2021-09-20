@@ -3,7 +3,7 @@ import ReactGA from 'react-ga'
 
 /**
  * 需配合react-router使用
- * @param gaCode
+ * @param gaCode ga跟踪id
  */
 export const useGaListener = (gaCode: string) => {
   const customHistory = createBrowserHistory()
