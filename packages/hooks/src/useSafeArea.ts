@@ -8,7 +8,7 @@ export const useSafeArea = (callback:(data:any)=>any)=>{
     Emitter.on('safeArea',(data)=>{
       callback(data)
     })
-    const res = postMessage({type:'event',desc:'安全区域',name:'safeArea'})
+    const res = postMessage({type:'state',desc:'安全区域',name:'safeArea'})
     if (!res){
       callback(false)
     }
