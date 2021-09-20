@@ -9,4 +9,5 @@ export interface EventsName{
   waringToast
   response
   request
+  safeArea
 }

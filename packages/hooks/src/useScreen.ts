@@ -20,6 +20,10 @@ export const useScreen = (showAppBar: boolean,showStatusBar: boolean,resCallback
         type: 'event',
         data: data
       })
+    if (res){
+
+    }
+
     resCallback(res)
   },[])
 }
