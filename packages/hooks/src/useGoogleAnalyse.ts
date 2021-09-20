@@ -5,7 +5,7 @@ import ReactGA from 'react-ga'
  * 需配合react-router使用
  * @param gaCode
  */
-const useGaListener = (gaCode: string) => {
+export const useGaListener = (gaCode: string) => {
   const customHistory = createBrowserHistory()
   ReactGA.initialize(gaCode)
   customHistory.listen((location) => {
@@ -14,4 +14,3 @@ const useGaListener = (gaCode: string) => {
   })
   return customHistory
 }
-export default useGaListener

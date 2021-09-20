@@ -2,7 +2,7 @@ import {  useLayoutEffect } from 'react'
 import {postMessage} from 'u-webview-core'
 import { Emitter } from 'u-webview-event'
 
-const useSafeArea = (callback:(data:any)=>any)=>{
+export const useSafeArea = (callback:(data:any)=>any)=>{
 
   useLayoutEffect(()=>{
     Emitter.on('safeArea',(data)=>{
@@ -15,5 +15,3 @@ const useSafeArea = (callback:(data:any)=>any)=>{
   },[])
 
 }
-
-export default useSafeArea
