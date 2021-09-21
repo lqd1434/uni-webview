@@ -3,4 +3,5 @@ export * from './useAppUserInfo'
 export * from './useGoogleAnalyse'
 export * from './useSafeArea'
 export * from './methods'
+export * from './useAppInfo'
 

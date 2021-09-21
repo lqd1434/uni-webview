@@ -1,6 +1,6 @@
-import { EventsName, ListenerName } from 'u-webview-type'
+import { EventsName, StatesName } from 'u-webview-type'
 
-export type nameType = keyof EventsName|keyof ListenerName
+export type nameType = keyof EventsName|keyof StatesName
 export type callbackType = (data:any) => void
 
 interface Listener{
