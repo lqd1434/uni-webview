@@ -1,6 +1,6 @@
 {
   "name": "u-webview-http",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "http",
   "author": "lqd1434 <1434288209@qq.com>",
   "homepage": "https://github.com/lqd1434/uni-webview#readme",
@@ -12,8 +12,8 @@
   ],
   "dependencies": {
     "axios": "^0.21.4",
-    "u-webview-core": "^0.5.0",
-    "u-webview-ui": "^0.5.0"
+    "u-webview-core": "^0.5.1",
+    "u-webview-ui": "^0.5.1"
   },
   "publishConfig": {
     "access": "public"
