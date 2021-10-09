@@ -1,7 +1,7 @@
 import { EventsName, StatesName } from 'u-webview-type'
 
 export type nameType = keyof EventsName|keyof StatesName
-export type callbackType = (data:any) => void
+export type callbackType<T = any> = (data:T) => void
 
 interface Listener{
   name:nameType;
@@ -19,7 +19,7 @@ class MyEventEmitter{
    * @param name 监听命名空间
    * @param callback 监听回调函数
    */
-  on(name:nameType, callback:callbackType){
+  on<T>(name:nameType, callback:callbackType<T>){
     let exist:boolean = false
     let itemIndex:number = -1
     this.listeners.forEach((item,index)=>{
@@ -42,7 +42,7 @@ class MyEventEmitter{
    * @param name 监听命名空间
    * @param callback 监听回调函数
    */
-  once(name:nameType,callback:callbackType){
+  once<T>(name:nameType,callback:callbackType<T>){
     const only = (data:any)=>{
       callback(data)
       this.off(name,only)
@@ -55,7 +55,7 @@ class MyEventEmitter{
    * @param name 监听回调函数
    * @param data 传输参数
    */
-  emit(name:nameType,data:any){
+  emit<T>(name:nameType,data:T){
     this.listeners.forEach((item,index)=>{
       if (item.name === name){
         //向所有监听者发送

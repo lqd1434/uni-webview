@@ -3,12 +3,13 @@ import { Callback } from 'u-webview-type'
 import { Emitter } from 'u-webview-event'
 
 class UWebView{
+
   connect(callback:Callback<boolean>){
     const timer = setTimeout(()=>{
       callback(false)
     },20000)
 
-    Emitter.once('ping',(data:any)=>{
+    Emitter.once<'success'|{}>('ping',(data)=>{
       clearTimeout(timer)
       if(data === 'success'){
         callback(true)
@@ -23,7 +24,7 @@ class UWebView{
   }
 
   getUserInfo(callback:Callback<any>){
-    Emitter.once('userInfo',(data:any)=>{
+    Emitter.once('userInfo',(data)=>{
       if(data){
         callback(data)
       } else{

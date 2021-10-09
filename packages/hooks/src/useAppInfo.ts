@@ -13,7 +13,7 @@ interface AppInfo{
  */
 export const useAppInfo = (callback:(data:AppInfo|boolean)=>void)=>{
   useLayoutEffect(()=>{
-    Emitter.on('appInfo',(data)=>{
+    Emitter.on<any>('appInfo',(data)=>{
       callback(data)
     })
     const res = postMessage({type:'state',desc:'app信息',name:'appInfo'})

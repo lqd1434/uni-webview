@@ -7,7 +7,7 @@ import {postMessage} from 'u-webview-core'
  * @param resCallback 回调函数,参数为bool类型,代表是否设置成功
  */
 
-export const setFullScreen = (showAppBar: boolean,showStatusBar: boolean,resCallback:(result)=>any) => {
+export const setFullScreen = (showAppBar: boolean,showStatusBar: boolean,resCallback:(result: boolean)=>any) => {
   const data = JSON.stringify({
     showAppBar,
     showStatusBar
