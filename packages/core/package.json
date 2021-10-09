@@ -20,5 +20,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lqd1434/uni-webview.git"
-  }
+  },
+  "gitHead": "de78de21dee2cb9d4969d4e811588067b2018444"
 }

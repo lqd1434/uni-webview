@@ -15,7 +15,6 @@ export const useApp = ():boolean=>{
 
   return isConnect
 }
-
 const paint = `                          _          _               
   _   _     __      _____| |____   _(_) _____      __
  | | | |____\\ \\ /\\ / / _ \\ '_ \\ \\ / / |/ _ \\ \\ /\\ / /
